@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>rendeles</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand" href="index.html">Főoldal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="rendeles.html">Rendelés<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="táblázat.html">Étlap</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="belepes.html">Belépés</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="nyitvatartás.html">nyitvatartás</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </nav>
+    <a href="belepes.html" target="_blank">belépés</a>_<a href="lista.html" target="blank">lista</a>_<a href="táblázat.html">táblázat</a><a href="https://www.netpincer.hu/">
+        <img src="képek/hamburger.jpg" alt="hambi" width="55" height="55">_<a href="nyitvatartás.html">nyitvatartás</a>_<a href="rendeles.html">Rendelés</a>_<a href="index.html">Főoldal</a>
+
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                 <div>
+                <label for="név">Név *</label>
+                <input id="név" name="név" type="text" required>
+
+            </div>
+            <div>
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" required>
+
+            </div>
+            <div>
+                <label for="cím">Cím *</label>
+                <input id="cím" name="cím" type="text" required>
+
+            </div>
+            <div> <label for="megjegyzés">megjegyzés *</label>
+                <textarea id="megjegyzés" name="megjegyzés" rows="5"></textarea>
+
+            </div></fieldset>
+            <fieldset> 
+                <legend>Kiegészítők</legend>
+                <span>Extra feltétek:</span>
+            <div>
+                <input id="semmi" name="extra" type="radio" value="0">
+                <label for="semmi">Nem kérek</label>
+
+
+            </div>
+            <div>
+                <input id="extra1" name="extra" type="radio" value="300">
+                <label for="extra1">Sajt</label>
+
+
+            </div>
+            <div>
+                <input id="extra2" name="extra" type="radio" value="250">
+                <label for="extra2">Hagyma</label>
+
+
+            </div>
+            <div>
+                <input id="extra3" name="extra" type="radio" value="250">
+                <label for="extra3">Uborka</label>
+
+
+            </div>
+            <div>
+                <input id="extra4" name="extra" type="radio" value="500">
+                <label for="extra4">Dupla hús</label>
+
+
+            </div>
+            <div>
+                <label for="szósz">Szószok</label>
+                <select name="szósz" id="szósz">
+                <option value="0">szósz1</option>
+                <option value="100">szósz2</option></select>
+            </div> <div>
+            <label for="darab">Mennyiség</label>
+            <input id="darab" name="darab" type="number" min="1" max="10" value="">
+
+        </div></fieldset>
+       
+        <div>
+            <input type="button" value="Rendelés leadása">Ár: <span>1200</span>Ft
+        </div>
+           
+           
+            
+
+        </form>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
